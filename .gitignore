@@ -1,0 +1,35 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.idea/
+*.iml
+*.iws
+.vscode/
+.fleet/
+
+# Segredos e configuração local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.jks
+*.keystore
+local.properties
+
+# Build
+build/
+out/
+target/
+.gradle/
+.cxx/
+captures/
+*.class
+*.log
+
+# Android
+*.apk
+*.aab
