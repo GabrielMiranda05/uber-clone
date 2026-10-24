@@ -1,3 +1,11 @@
 spring:
   application:
     name: uberclone
+  profiles:
+    default: dev
+  config:
+    import:
+      - optional:file:.env[.properties]
+      - optional:file:backend/.env[.properties]
+  jpa:
+    open-in-view: false
