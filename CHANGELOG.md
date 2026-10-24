@@ -12,3 +12,15 @@ versionamento [SemVer](https://semver.org/lang/pt-BR/).
 - Arquivos-base: `.gitignore`, `.gitattributes`, `.editorconfig`, `LICENSE`.
 - Guia de contribuição, templates de PR e issue.
 - ADR 0001: monorepo e Gradle.
+
+
+## [0.2.0] - 2026-10-24
+
+### Added
+- Projeto Spring Boot 4.1 (Java 21, Gradle Kotlin DSL) em `backend/`.
+- PostgreSQL 17 via Docker Compose e perfil `dev`.
+- Spring Data JPA e Flyway com migration baseline.
+- Tratamento global de erros com ProblemDetail (RFC 9457) e testes.
+- Actuator restrito a `health` e `info`.
+- CI com GitHub Actions (build e testes do backend).
+- ADR 0002: Spring Boot 4.1 e Java 21.
