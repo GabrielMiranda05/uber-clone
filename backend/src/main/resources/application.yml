@@ -9,3 +9,9 @@ spring:
       - optional:file:backend/.env[.properties]
   jpa:
     open-in-view: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
