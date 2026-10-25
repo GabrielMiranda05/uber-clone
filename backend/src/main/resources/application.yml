@@ -9,6 +9,8 @@ spring:
       - optional:file:backend/.env[.properties]
   jpa:
     open-in-view: false
+    hibernate:
+      ddl-auto: validate
 
 management:
   endpoints:
