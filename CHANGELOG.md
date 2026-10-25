@@ -5,6 +5,18 @@ versionamento [SemVer](https://semver.org/lang/pt-BR/).
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-24
+
+### Added
+- Modelo de domínio documentado (diagrama ER e máquina de estados da corrida).
+- Migrations Flyway: usuários, motoristas, veículos, corridas, avaliações e pagamentos.
+- Entidades JPA, enums e repositories com consultas paginadas e sem N+1.
+- Testes de persistência com Testcontainers (PostgreSQL real), cobrindo constraints e índices.
+- ADR 0003: modelagem do domínio.
+
+### Changed
+- CI sem serviço de banco: os testes sobem o próprio PostgreSQL.
+
 ## [0.2.0] - 2026-10-24
 
 ### Added
